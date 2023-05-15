@@ -61,10 +61,93 @@
                         <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a href="" data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
 
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstname" name="firstname"
+                                    placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname"
+                                    placeholder="Last Name">
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Tel no</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode"
+                                    placeholder="Area code">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel No">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        <strong>May we contact you?</strong>
+                                    </label>
+    
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">Tel</option>
+                                    <option value="">Email</option>
+    
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your feedback</label>
+                            <div class="col-md-10">
+                                <textarea type="email" class="form-control" id="feedback" name="feedback"
+                                    placeholder="feedback"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -80,6 +163,13 @@
 
                 <div class="col-12 col-sm-6">
                     <img src="img/peakpx.jpg" class="img-fluid" alt="">
+                </div>
+                
+                <div class="col-12 col-sm align-self-cente ">
+                    <a href="#reserveform" role="button" class="btn btn-block nav-link btn-warning"
+                    data-toggle="tooltip" data-html="true" title="Or Call US at <br><strong>+94775371591</strong></br>"
+                    data-placement="bottom">Reserve Table</a>
+
                 </div>
 
             </div>
@@ -143,7 +233,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li><a href="./about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li><a href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li><a href="./menu.html"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                         <li><a href="./contact.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
@@ -174,6 +264,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
