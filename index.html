@@ -1,46 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <p>
-        This is a sidebar, for example a terminology definition or a short
-        background to a historical figure.
-      </p>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a  class="navbar-brand mr-auto" href="#">Hi hiorusha</a>
+            <div class="collapse navbar-collapse" id="NavBar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#">Hi hiorusha</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>hirusha fernando</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+                        reiciendis rem nam at consequatur, doloribus obcaecati nemo
+                        tempore dolores vitae nobis eius omnis. Repellendus error
+                        excepturi sunt distinctio alias numquam!
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6"></div>
+            </div>
+        </div>
     </header>
-    <body>
-      <div align="left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-      <div align="right">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-      <div align="center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-      <div align="justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-    </body>
-    <footer>
-      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>our lipstick</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <h2>Uthpizz</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                    consectetur similique et soluta deleniti ipsum ipsa molestiae
+                    exercitationem explicabo vel eligendi aliquam eius, officia odit,
+                    doloremque suscipit sunt, quas id!
+                </p>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col col-sm col-md">
+                <h3>this months promotion</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <h2>Uthpizz</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                    consectetur similique et soluta deleniti ipsum ipsa molestiae
+                    exercitationem explicabo vel eligendi aliquam eius, officia odit,
+                    doloremque suscipit sunt, quas id!
+                </p>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col col-sm order-sm-last col-md">
+                <h3>this months promotion</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <h2>Uthpizz</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                    consectetur similique et soluta deleniti ipsum ipsa molestiae
+                    exercitationem explicabo vel eligendi aliquam eius, officia odit,
+                    doloremque suscipit sunt, quas id!
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>no41/c/1, Kospitiana, Pugoda</address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="https://google.com">Google</a>
+                        <a href="https://google.com">Google</a>
+                        <a href="https://google.com">Google</a>
+                        <a href="https://google.com">Google</a>
+                        <a href="https://google.com">Google</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>Copyright</p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
